@@ -20,7 +20,8 @@
   }
 
   @include pc {
-    background-image: url(../images/pc/about-milk@1x.png);
+    // background-image: url(../images/pc/about-milk@1x.png);
+    background-image: url(../../images/management_p.png);
     background-repeat: no-repeat;
     background-position: bottom -65px left;
     background-size: 100%;

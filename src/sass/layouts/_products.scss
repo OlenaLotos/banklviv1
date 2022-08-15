@@ -73,7 +73,7 @@
   width: 280px;
 
   margin-bottom: 130px;
-  padding-top: 161px;
+  padding-top: 41px;
   padding-bottom: 41px;
   padding-right: 42px;
   padding-left: 42px;
@@ -83,7 +83,7 @@
   border-radius: 24px;
 
   @include tab {
-    padding-top: 150px;
+    padding-top: 15px;
     padding-right: 15px;
     padding-left: 15px;
 
@@ -94,7 +94,7 @@
     height: 485px;
   }
   @include pc {
-    padding-top: 165px;
+    padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 44px;
     padding-right: 44px;
@@ -104,108 +104,109 @@
   }
 
   // -----------------Dote------------- //
-  &::after {
-    display: flex;
-    position: absolute;
-    content: '';
-    top: 220px;
-    left: 45%;
-    background-image: url(./../images/dotes@2x-min.png);
-    width: 26px;
-    height: 6px;
+  //   &::after {
+  //     display: flex;
+  //     position: absolute;
+  //     content: '';
+  //     top: 220px;
+  //     left: 45%;
+  //     background-image: url(./../images/dotes@2x-min.png);
+  //     width: 26px;
+  //     height: 6px;
 
-    @include tab {
-      top: 205px;
-    }
-    @include pc {
-      top: 230px;
-    }
-    //  -------------------------------- //
-  }
+  //     @include tab {
+  //       top: 205px;
+  //     }
+  //     @include pc {
+  //       top: 230px;
+  //     }
+  //     //  -------------------------------- //
+  //   }
+  // }
 }
 // ------------ Decorative Pictures --------------- //
 .products-card--bg {
   &-pink {
-    background-color: $cl-card1;
+    background-color: grey;
 
-    &::before {
-      position: absolute;
-      content: '';
-      width: 250px;
-      height: 250px;
-      top: -113px;
-      left: 7%;
-      background-image: url(./../images/mobile/ice-cream@2x.png);
-      background-repeat: no-repeat;
-      background-size: contain;
+    // &::before {
+    //   position: absolute;
+    //   content: '';
+    //   width: 250px;
+    //   height: 250px;
+    //   top: -113px;
+    //   left: 7%;
+    //   // background-image: url(./../images/mobile/ice-cream@2x.png);
+    //   background-repeat: no-repeat;
+    //   background-size: contain;
 
-      @include tab {
-        width: 220px;
-        height: 238px;
-        left: 0%;
-      }
+    //   @include tab {
+    //     width: 220px;
+    //     height: 238px;
+    //     left: 0%;
+    //   }
 
-      @include pc {
-        width: 335px;
-        height: 335px;
-        top: -210px;
-      }
-    }
+    //   @include pc {
+    //     width: 335px;
+    //     height: 335px;
+    //     top: -210px;
+    //   }
+    // }
   }
-  &-bezh {
-    background-color: $cl-card2;
+  // &-bezh {
+  //   background-color: $cl-card2;
 
-    &::before {
-      position: absolute;
-      content: '';
-      width: 250px;
-      height: 250px;
-      top: -113px;
-      left: 7%;
-      background-image: url(./../images/mobile/ice-coffe@2x.png);
-      background-repeat: no-repeat;
-      background-size: contain;
+  //   &::before {
+  //     position: absolute;
+  //     content: '';
+  //     width: 250px;
+  //     height: 250px;
+  //     top: -113px;
+  //     left: 7%;
+  //     background-image: url(./../images/mobile/ice-coffe@2x.png);
+  //     background-repeat: no-repeat;
+  //     background-size: contain;
 
-      @include tab {
-        width: 220px;
-        height: 238px;
-        left: 0%;
-      }
+  //     @include tab {
+  //       width: 220px;
+  //       height: 238px;
+  //       left: 0%;
+  //     }
 
-      @include pc {
-        width: 335px;
-        height: 335px;
-        top: -210px;
-      }
-    }
-  }
+  //     @include pc {
+  //       width: 335px;
+  //       height: 335px;
+  //       top: -210px;
+  //     }
+  //   }
+  // }
 
-  &-green {
-    background-color: $cl-card3;
+  // &-green {
+  //   background-color: $cl-card3;
 
-    &::before {
-      position: absolute;
-      content: '';
-      width: 250px;
-      height: 250px;
-      top: -113px;
-      left: 7%;
-      background-image: url(./../images/mobile/milkshakes@2x.png);
-      background-repeat: no-repeat;
-      background-size: contain;
+  //   &::before {
+  //     position: absolute;
+  //     content: '';
+  //     width: 250px;
+  //     height: 250px;
+  //     top: -113px;
+  //     left: 7%;
+  //     background-image: url(./../images/mobile/milkshakes@2x.png);
+  //     background-repeat: no-repeat;
+  //     background-size: contain;
 
-      @include tab {
-        width: 220px;
-        height: 238px;
-        left: 0%;
-      }
-      @include pc {
-        width: 335px;
-        height: 335px;
-        top: -210px;
-      }
-    }
-  }
+  //     @include tab {
+  //       width: 220px;
+  //       height: 238px;
+  //       left: 0%;
+  //     }
+  //     @include pc {
+  //       width: 335px;
+  //       height: 335px;
+  //       top: -210px;
+  //     }
+  //   }
+  // }
 }
 // ---------------------------------------------------------------- //
 
