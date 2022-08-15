@@ -31,14 +31,501 @@
 
   <body>
     <header id="home" class="header">
-      <include src="./partials/header.html"></include>
-      <include src="./partials/hero.html"></include>
+      <!-- кнопка скрол вгору -->
+      <div class="scrollTop"></div>
+      <section>
+        <!-- блок мобільне меню -->
+        <div class="mob-menu is-hidden" data-mobMenu>
+          <!-- кнопка закриття меню -->
+          <button type="button" class="mob-menu__close" data-mobMenu-close>
+            <svg width="23" height="23" aria-label="закрити меню">
+              <use class="icon-cross" href="./images/sprite.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <!-- мобільна-кнопка купити зараз -->
+          <div class="mob-nav">
+            <!-- мобільне меню -->
+            <div>
+              <ul class="mob-nav__list list">
+                <li class="mob-nav__item">
+                  <a class="link mob-nav__link" href="#home">На головну</a>
+                </li>
+                <li class="mob-nav__item">
+                  <a class="link mob-nav__link" href="#aboutUs">Про Банк</a>
+                </li>
+                <li class="mob-nav__item">
+                  <a class="link mob-nav__link" href="#investors">Інвестори</a>
+                </li>
+                <li class="mob-nav__item">
+                  <a class="link mob-nav__link" href="#management">Керівництво Банку</a>
+                </li>
+                <li class="mob-nav__item">
+                  <a class="link mob-nav__link" href="#contac">Наш розвиток</a>
+                </li>
+                <li class="mob-nav__item">
+                  <a class="link mob-nav__link" href="#contac">Партнери</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- шапка зайту -->
+        <div class="container header__section">
+          <!-- логотип -->
+          <p class="header__logo animate__animated animate__bounceIn">БАНК ЛЬВІВ LOGO</p>
+          <!-- <a href="#" class="header__logo animate__animated animate__bounceIn">
+      БАНК ЛЬВІВ
+      <picture>
+        <source
+          srcset="./images/logo1logo@1x-min.png 1x, ./images/logo1logo@2x-min.png 2x"
+          media="(min-width: 320px)"
+        />
+        <img src="./images/logo1logo@1x-min.png" alt="site logo" />
+      </picture>
+    </a> -->
+          <!-- навігаційна-кнопка купити зараз -->
+
+          <!-- кнопка відкривання мобільного меню -->
+          <button type="button" class="mob-menu__open" data-mobMenu-open>
+            <svg width="20" height="12" aria-label="відкрити меню">
+              <use class="icon-menu" href="./images/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- панель навігації  -->
+        <nav class="nav">
+          <div class="nav__bar">
+            <ul class="site-menu list">
+              <li class="nav__item">
+                <a class="nav__link current" href="#home">На головну</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#aboutUs">Про Банк</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#investors">Інвестори</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#management">Керівництво Банку</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#contac">Наш розвиток</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#contac">Партнери</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+
+      <!-- <include src="./partials/header.html"></include> -->
+      <!-- <include src="./partials/hero.html"></include> -->
+      <section id="aboutUs" class="section hero__section">
+        <div class="container container__products">
+          <!-- <div class="container hero__container"></div> -->
+          <h2 class="products__main-header">ПРО БАНК</h2>
+          <ul class="products-block">
+            <li class="products-block__item">
+              <div class="products-card products-card--bg-pink">
+                <h3 class="products-card__header--text products-card__item">
+                  Банк Львів – регіональний банк на Західній Україні для клієнтів ММСБ та фізичних
+                  осіб
+                </h3>
+                <ul>
+                  <li>
+                    <p class="products-card__description products-card__item">35.000 клієнтів</p>
+                  </li>
+                  <li>
+                    <p class="products-card__description products-card__item">35 років на ринку</p>
+                  </li>
+                  <li>
+                    <p class="products-card__description products-card__item">19 відділеннь</p>
+                  </li>
+                  <li>
+                    <p class="products-card__description products-card__item">420 працівників</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="products-block__item">
+              <div class="products-card products-card--bg-pink">
+                <h3 class="products-card__header--text products-card__item">Акціонери:</h3>
+                <ul>
+                  <li>
+                    <p class="products-card__description products-card__item">
+                      48.55% - responsAbility, Швейцарія
+                    </p>
+                  </li>
+                  <li>
+                    <p class="products-card__description products-card__item">
+                      37.46% - M.Petursson, Ісландія
+                    </p>
+                  </li>
+                  <li>
+                    <p class="products-card__description products-card__item">
+                      13.94% - Nefco, Фінляндія
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </header>
     <main>
-      <include src="./partials/products.html"></include>
-      <include src="./partials/about.html"></include>
-      <include src="./partials/advantages.html"></include>
-      <include src="./partials/gallery.html"></include>
+      <!-- <include src="./partials/products.html"></include> -->
+      <section id="investors" class="section">
+        <div class="container container__products">
+          <h2 class="products__main-header">ІНВЕСТОРИ БАНКУ</h2>
+          <ul class="products-block">
+            <li class="products-block__item">
+              <div class="products-card products-card--bg-pink">
+                <h3 class="products-card__header--text products-card__item">
+                  ШВЕЙЦАРСЬКИЙ АКЦІОНЕР
+                </h3>
+                <p class="products-card__description products-card__item">
+                  Швейцарський інвестиційний фонд<span>responsAbility</span>здійснює фінансування
+                  боргу та власного капіталу компаніям в країнах з перехідною економікою та країнах,
+                  що розвиваються. Його акціонери включають ряд авторитетних установ на
+                  швейцарському фінансовому ринку та його власних співробітників.
+                </p>
+              </div>
+            </li>
+            <li class="products-block__item">
+              <div class="products-card products-card--bg-pink">
+                <h3 class="products-card__header--text products-card__item">
+                  ІСЛАНДСЬКИЙ АКЦІОНЕР
+                </h3>
+                <p class="products-card__description products-card__item">
+                  Швейцарський інвестиційний фонд<span>responsAbility</span>здійснює фінансування
+                  боргу та власного капіталу компаніям в країнах з перехідною економікою та країнах,
+                  що розвиваються. Його акціонери включають ряд авторитетних установ на
+                  швейцарському фінансовому ринку та його власних співробітників.
+                </p>
+              </div>
+            </li>
+            <li class="products-block__item">
+              <div class="products-card products-card--bg-pink">
+                <h3 class="products-card__header--text products-card__item">ФІНСЬКИЙ АКЦІОНЕР</h3>
+                <p class="products-card__description products-card__item">
+                  Швейцарський інвестиційний фонд<span>responsAbility</span>здійснює фінансування
+                  боргу та власного капіталу компаніям в країнах з перехідною економікою та країнах,
+                  що розвиваються. Його акціонери включають ряд авторитетних установ на
+                  швейцарському фінансовому ринку та його власних співробітників.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="management" class="section about__section">
+        <div class="container about__container">
+          <h2 class="title about__title">КЕРІВНИЦТВО БАНКУ</h2>
+          <div class="about__product">
+            <div class="about__thumb">
+              <img srcset="" alt="management" width="1200" height="320" />
+              <div class="about_name_thumb">
+                <div>
+                  <a class="link name_link" href=""><p class="about_name">Ашот Абраамян</p></a>
+
+                  <p class="about_name_country">Вірменія</p>
+                </div>
+                <div>
+                  <a class="link name_link" href=""><p class="about_name">Наталія Осадчій</p></a>
+
+                  <p class="about_name_country">Молдова</p>
+                </div>
+                <div>
+                  <a class="link name_link" href=""><p class="about_name">Віктор Хімяк</p></a>
+
+                  <p class="about_name_country">Україна</p>
+                </div>
+                <div>
+                  <a class="link name_link" href=""><p class="about_name">Тамар Тхелідзе</p></a>
+
+                  <p class="about_name_country">Грузія</p>
+                </div>
+              </div>
+              <!-- <picture class="about__eco-bio">
+                <source
+                  srcset="./images/pc/about-eco-bio@1x.png 1x, ./images/pc/about-eco-bio@2x.png 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/tab/about-produkt-bio-eco@1x-min.png 1x,
+                    ./images/tab/about-produkt-bio-eco@2x-min.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mobile/bioeco@1x.png 1x, ./images/mobile/bioeco@2x.png 2x"
+                  media="(min-width: 480px)"
+                />
+                <img src="./images/pc/about-eco-bio@1x.png" alt="cow and milk" />
+              </picture> -->
+            </div>
+            <div class="about__description">
+              <p class="text about__text about__text--first">
+                Керівництво Банку має багатий міжнародний досвід в управлінні та розвитку великих
+                банків, орієнтованих на розвиток малого і середнього бізнесу. Вони застосовують
+                найкращі практики створення міцної, стабільної та вмотивованої команди
+                професіоналів. Запорукою успіху є якісне навчання, постійний розвиток та фокус на
+                самостійне прийняття рішень нашими працівниками.
+              </p>
+
+              <!-- <button data-modal-open class="btn about__btn" type="button">
+                <span class="about__btn-link"
+                  >Read more
+                  <svg class="about__btn-icon" width="4" height="8">
+                    <use href="./images/sprite.svg#icon-button-arrow"></use>
+                  </svg>
+                </span>
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <include src="./partials/about.html"></include> -->
+      <section class="section advantage__section">
+        <div class="container advantage__container">
+          <h2 class="advantage__title visually-hidden">Company's advantages</h2>
+          <div class="minicircle1">
+            <div class="logo">
+              <div class="chart"><i class="fa fa-bar-chart"></i></div>
+              <div class="title">
+                <div class="title1">НАШ РОЗВИТК</div>
+                <div class="title2">390</div>
+              </div>
+              <div class="tagline">INFO GRAPHIC TUTURIAL</div>
+            </div>
+          </div>
+          <div class="minicircle2"></div>
+          <div class="containerG">
+            <div class="boxG">
+              <div class="circle"></div>
+              <div class="maincontainer">
+                <div class="boxcontainer">
+                  <div class="circleinthebox"><i class=""></i></div>
+                  <div class="box1">
+                    <h1>YAKV390</h1>
+                    <p>Please...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="boxG">
+              <div class="circle"></div>
+              <div class="maincontainer">
+                <div class="boxcontainer">
+                  <div class="circleinthebox"><i class="fa fa-gear"></i></div>
+                  <div class="box1">
+                    <h1>YAKV390</h1>
+                    <p>Please...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="boxG">
+              <div class="circle"></div>
+              <div class="maincontainer">
+                <div class="boxcontainer">
+                  <div class="circleinthebox"><i class=""></i></div>
+                  <div class="box1">
+                    <h1>YAKV390</h1>
+                    <p>Please...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="boxG">
+              <div class="circle"></div>
+              <div class="maincontainer">
+                <div class="boxcontainer">
+                  <div class="circleinthebox"><i class=""></i></div>
+                  <div class="box1">
+                    <h1>YAKV390</h1>
+                    <p>Please...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <include src="./partials/advantages.html"></include> -->
+      <!-- <include src="./partials/gallery.html"></include> -->
+      <section id="aboutUs" class="gallery section">
+        <div class="container gallery__container">
+          <h2 class="clients-box__title">ПОРТНЕРИ НАШОГО БАНКУ</h2>
+          <ul class="clients-box__list clients-list list">
+            <li class="clients-list__item">
+              <div class="clients-list__thumb">
+                <a href="" class="clients-list__link">
+                  <svg class="clients-list__logo" width="106" height="60">
+                    <use href=""></use>
+                  </svg>
+                  <p>
+                    Співпраця: з 2007 <br />
+                    Позика на фінансування кредитів з енергоефективності <br />
+                    Сума: 3 млн EUR
+                  </p>
+                </a>
+              </div>
+            </li>
+            <li class="clients-list__item">
+              <div class="clients-list__thumb">
+                <a href="" class="clients-list__link">
+                  <svg class="clients-list__logo" width="106" height="60">
+                    <use href=""></use>
+                  </svg>
+                  <p>
+                    Співпраця : з 2013 Гарантія покриття 50% застави для позик МСБ та сільського
+                    господарства Сума : 17млн $
+                  </p>
+                </a>
+              </div>
+            </li>
+            <li class="clients-list__item">
+              <div class="clients-list__thumb">
+                <a href="" class="clients-list__link">
+                  <svg class="clients-list__logo" width="106" height="60">
+                    <use href=""></use>
+                  </svg>
+                  <p>
+                    Співпраця : з грудня 2018 Субборг для фінансування агробізнесу Сума : 3.6 млн $
+                  </p>
+                </a>
+              </div>
+            </li>
+            <li class="clients-list__item">
+              <div class="clients-list__thumb">
+                <a href="" class="clients-list__link">
+                  <svg class="clients-list__logo" width="106" height="60">
+                    <use href=""></use>
+                  </svg>
+                  <p>
+                    Співпраця : з грудня 2018 Кредит для фінансування агробізнесу Сума : 3млн EUR і
+                    2млн EUR в грн
+                  </p>
+                </a>
+              </div>
+            </li>
+            <li class="clients-list__item">
+              <div class="clients-list__thumb">
+                <a href="" class="clients-list__link">
+                  <svg class="clients-list__logo" width="106" height="60">
+                    <use href=""></use>
+                  </svg>
+                  <p>
+                    Співпраця : з грудня 2018 Кредит для фінансування МСБ Сума : 5,7 млн EUR і 84млн
+                    грн
+                  </p>
+                </a>
+              </div>
+            </li>
+            <li class="clients-list__item">
+              <div class="clients-list__thumb">
+                <a href="" class="clients-list__link">
+                  <svg class="clients-list__logo" width="106" height="60">
+                    <use href=""></use>
+                    <!-- <use href="./images/icons.svg#icon-Logo6"></use> -->
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="clients-list__item">
+              <div class="clients-list__thumb">
+                <a href="" class="clients-list__link">
+                  <svg class="clients-list__logo" width="106" height="60">
+                    <use href=""></use>
+                  </svg>
+                  <p>
+                    Співпраця: з 2007 <br />
+                    Позика на фінансування кредитів з енергоефективності <br />
+                    Сума: 3 млн EUR
+                  </p>
+                </a>
+              </div>
+            </li>
+            <li class="clients-list__item">
+              <div class="clients-list__thumb">
+                <a href="" class="clients-list__link">
+                  <svg class="clients-list__logo" width="106" height="60">
+                    <use href=""></use>
+                  </svg>
+                  <p>
+                    Співпраця: з 2007 <br />
+                    Позика на фінансування кредитів з енергоефективності <br />
+                    Сума: 3 млн EUR
+                  </p>
+                </a>
+              </div>
+            </li>
+            <li class="clients-list__item">
+              <div class="clients-list__thumb">
+                <a href="" class="clients-list__link">
+                  <svg class="clients-list__logo" width="106" height="60">
+                    <use href=""></use>
+                  </svg>
+                  <p>
+                    Співпраця: з 2007 <br />
+                    Позика на фінансування кредитів з енергоефективності <br />
+                    Сума: 3 млн EUR
+                  </p>
+                </a>
+              </div>
+            </li>
+            <li class="clients-list__item">
+              <div class="clients-list__thumb">
+                <a href="" class="clients-list__link">
+                  <svg class="clients-list__logo" width="106" height="60">
+                    <use href=""></use>
+                  </svg>
+                  <p>
+                    Співпраця: з 2007 <br />
+                    Позика на фінансування кредитів з енергоефективності <br />
+                    Сума: 3 млн EUR
+                  </p>
+                </a>
+              </div>
+            </li>
+            <li class="clients-list__item">
+              <div class="clients-list__thumb">
+                <a href="" class="clients-list__link">
+                  <svg class="clients-list__logo" width="106" height="60">
+                    <use href=""></use>
+                  </svg>
+                  <p>
+                    Співпраця: з 2007 <br />
+                    Позика на фінансування кредитів з енергоефективності <br />
+                    Сума: 3 млн EUR
+                  </p>
+                </a>
+              </div>
+            </li>
+            <li class="clients-list__item">
+              <div class="clients-list__thumb">
+                <a href="" class="clients-list__link">
+                  <svg class="clients-list__logo" width="106" height="60">
+                    <use href=""></use>
+                  </svg>
+                  <p>
+                    Співпраця: з 2007 <br />
+                    Позика на фінансування кредитів з енергоефективності <br />
+                    Сума: 3 млн EUR
+                  </p>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <include src="./partials/customer-reviews.html"></include>
       <include src="./partials/contacts.html"></include>
       <include src="./partials/modal.html"></include>

@@ -1,48 +1,22 @@
-$(document).ready(function () {
-  $('.gallery__slider').slick({
-    adaptiveHeight: true,
-    slidesToShow: 1,
-    responsive: [
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-        },
-      },
-    ],
-  });
+//
 
-  $('.masonry__item-img-1').click(function (event) {
-    $('.gallery__slider').slick('goTo', 0);
-  });
-  $('.masonry__item-img-2').click(function (event) {
-    $('.gallery__slider').slick('goTo', 1);
-  });
-  $('.masonry__item-img-3').click(function (event) {
-    $('.gallery__slider').slick('goTo', 2);
-  });
-  $('.masonry__item-img-4').click(function (event) {
-    $('.gallery__slider').slick('goTo', 3);
-  });
-  $('.masonry__item-img-5').click(function (event) {
-    $('.gallery__slider').slick('goTo', 4);
-  });
-  $('.masonry__item-img-6').click(function (event) {
-    $('.gallery__slider').slick('goTo', 5);
-  });
-  $('.masonry__item-img-7').click(function (event) {
-    $('.gallery__slider').slick('goTo', 6);
-  });
-  $('.masonry__item-img-8').click(function (event) {
-    $('.gallery__slider').slick('goTo', 7);
-  });
-  $('.masonry__item-img-9').click(function (event) {
-    $('.gallery__slider').slick('goTo', 8);
-  });
-  $('.masonry__item-img-10').click(function (event) {
-    $('.gallery__slider').slick('goTo', 9);
-  });
-  $('.masonry__item-img-11').click(function (event) {
-    $('.gallery__slider').slick('goTo', 10);
-  });
-});
+var lightcolor = new ArrayBuffer('purple', '#ffd400', 'rgb(0, 253, 211)', '#FF022C', '#6eff00');
+var darkcolor = new ArrayBuffer('darkblue', '#ff4b00', '#4668FF', '#6C0046', '#046704');
+
+const box = document.querySelectorAll('.boxG');
+const maincontainer = document.querySelectorAll('.maincontainer');
+const circle = document.querySelectorAll('.circle');
+const boxcontainer = document.querySelectorAll('.boxcontainer');
+const circleinthebox = document.querySelectorAll('.circleinthebox');
+
+var ang = 30;
+for (i = 0; i < box.length; i++) {
+  box[i].style.transform = 'translate(0px. -100%) rotateZ(" + ang + "deg")';
+  box[i].style.backgroundcolor = lightcolor[i];
+  circle[i].style.backgroundcolor = lightcolor[i];
+  maincontainer[i].style.transform = 'rotateZ(-" + ang + "deg) translateX(-10px)';
+  boxcontainer[i].style.backgroundcolor =
+    'linear-gradient(to right, " + lightcolor[i] + "," + darkcolor[i] + ")';
+  circleinthebox[i].style.color = darkcolor[i];
+  ang = ang + 150 / bax.length;
+}
