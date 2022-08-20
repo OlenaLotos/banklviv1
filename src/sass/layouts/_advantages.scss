@@ -1,4 +1,4 @@
-.advantage__section {
+.development__section {
   padding-top: 39px;
   padding-bottom: 97px;
   background: $cl-section;
@@ -160,4 +160,62 @@
     line-height: 1.75;
     letter-spacing: 0.02em;
   }
+}
+
+.development__title {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
+.development__title {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ac145a;
+  margin-bottom: 60px;
+
+  @include tab {
+    margin-bottom: 60px;
+  }
+
+  @include pc {
+    font-size: 58px;
+    margin-bottom: 80px;
+  }
+  &-description {
+    margin-bottom: 15px;
+    font-family: Titan One;
+    font-size: 18px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $cl-primary;
+
+    @include pc {
+      font-size: 30px;
+    }
+  }
+}
+
+.development__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.development-img__thumb {
+  border: #d41443 solid 2px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
 }
