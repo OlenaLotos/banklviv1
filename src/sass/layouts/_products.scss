@@ -25,7 +25,7 @@
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.04em;
-  color: $cl-accent;
+  color: #ac145a;
   margin-bottom: 60px;
 
   @include tab {
@@ -128,7 +128,7 @@
 // ------------ Decorative Pictures --------------- //
 .products-card--bg {
   &-pink {
-    background-color: grey;
+    background-color: #003e51;
 
     // &::before {
     //   position: absolute;
