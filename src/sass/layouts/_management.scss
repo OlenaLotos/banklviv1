@@ -1,4 +1,4 @@
-.about__section {
+.management__section {
   padding-top: 125px;
   background-color: $cl-section;
 
@@ -36,7 +36,7 @@
   }
 }
 
-.about__container {
+.management__container {
   padding-left: 50px;
   padding-right: 50px;
 
@@ -51,7 +51,7 @@
   }
 }
 
-.about__pre-title {
+.management__pre-title {
   margin-bottom: 15px;
   @include font-design(Titan One, normal, 400, 18px, 1.17);
 
@@ -70,14 +70,14 @@
   }
 }
 
-.about__title {
+.management__title {
   margin: auto;
   margin-bottom: 26px;
   @include font-design(Titan One, normal, 400, 34px, 1.15, 0.04em);
 
   text-align: center;
   text-transform: uppercase;
-  color: #ac145a;
+  color: $cl-menu-bg;
   @media screen and (max-width: 767px) {
     width: 200px;
   }
@@ -99,7 +99,7 @@
 //   }
 // }
 
-.about__thumb {
+.management__thumb {
   position: relative;
   width: 100%;
   height: auto;
@@ -129,13 +129,13 @@
   }
 }
 
-.about_name {
+.management_name {
   font-weight: bold;
   line-height: 1.14;
   letter-spacing: 0.03em;
   font-size: 8px;
   text-transform: uppercase;
-  color: var(--white-text-color);
+  color: $cl-menu-bg;
   padding-top: 6px;
   padding-bottom: 6px;
 
@@ -152,11 +152,11 @@
   }
 }
 
-.about_name_country {
+.management_name_country {
   font-style: italic;
   font-size: 8px;
   text-transform: uppercase;
-  color: var(--white-text-color);
+  color: $cl-h-text;
   padding-top: 6px;
   padding-bottom: 6px;
 
@@ -184,16 +184,16 @@
   &:hover,
   &:focus {
     color: $cl-accent;
-    text-shadow: 0px 5px 5px rgba(212, 20, 67, 0.6);
+    text-shadow: 0px 5px 5px rgba(172, 20, 90, 0.6);
     outline: none;
   }
 }
 
-.about_name_thumb {
+.management_name_thumb {
   display: flex;
   justify-content: space-around;
 }
-.about__description {
+.management__description {
   @include tab {
     padding-top: 50px;
     flex-basis: calc((100% - 17px) / 2);
@@ -206,7 +206,7 @@
   }
 }
 
-.about__list {
+.management__list {
   margin-bottom: 17px;
 
   @include tab {
@@ -218,20 +218,20 @@
   }
 }
 
-.about__item:not(:last-child) {
+.management__item:not(:last-child) {
   margin-bottom: 30px;
 
   @include pc {
     margin-bottom: 35px;
   }
 }
-.about__item:nth-child(2) {
+.management__item:nth-child(2) {
   @media screen and (max-width: 1279px) {
     margin-bottom: 15px;
   }
 }
 
-.about__text {
+.management__text {
   @include font-design(DM Sans, normal, 500, 12px, 1.62);
 
   color: $cl-text;
@@ -244,7 +244,7 @@
   }
 }
 
-.about__text--first {
+.management__text--first {
   color: $cl-h-text;
 
   @include pc {
@@ -252,7 +252,7 @@
   }
 }
 
-.about__btn {
+.management__btn {
   padding: 0;
   min-width: 176px;
   height: 44px;
@@ -282,11 +282,11 @@
   &:focus,
   &:active {
     background-color: $cl-hover-bg2;
-    text-shadow: 0px 5px 5px rgba(212, 20, 67, 0.6);
+    text-shadow: 0px 5px 5px rgba(172, 20, 90, 0.6);
     outline: none;
   }
 }
 
-.about__btn-icon {
+.management__btn-icon {
   margin-left: 13px;
 }

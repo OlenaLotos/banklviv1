@@ -48,9 +48,6 @@
             <div>
               <ul class="mob-nav__list list">
                 <li class="mob-nav__item">
-                  <a class="link mob-nav__link" href="#home">На головну</a>
-                </li>
-                <li class="mob-nav__item">
                   <a class="link mob-nav__link" href="#aboutUs">Про Банк</a>
                 </li>
                 <li class="mob-nav__item">
@@ -72,8 +69,9 @@
         <!-- шапка зайту -->
         <div class="container header__section">
           <!-- логотип -->
-          <p class="header__logo animate__animated animate__bounceIn">БАНК ЛЬВІВ LOGO</p>
-          <!-- <a href="#" class="header__logo animate__animated animate__bounceIn">
+          <div>
+            <p class="header__logo animate__animated animate__bounceIn">БАНК ЛЬВІВ LOGO</p>
+            <!-- <a href="#" class="header__logo animate__animated animate__bounceIn">
       БАНК ЛЬВІВ
       <picture>
         <source
@@ -83,7 +81,7 @@
         <img src="./images/logo1logo@1x-min.png" alt="site logo" />
       </picture>
     </a> -->
-          <!-- навігаційна-кнопка купити зараз -->
+          </div>
 
           <!-- кнопка відкривання мобільного меню -->
           <button type="button" class="mob-menu__open" data-mobMenu-open>
@@ -96,9 +94,6 @@
         <nav class="nav">
           <div class="nav__bar">
             <ul class="site-menu list">
-              <li class="nav__item">
-                <a class="nav__link current" href="#home">На головну</a>
-              </li>
               <li class="nav__item">
                 <a class="nav__link" href="#aboutUs">Про Банк</a>
               </li>
@@ -118,52 +113,52 @@
           </div>
         </nav>
       </section>
+    </header>
 
-      <!-- <include src="./partials/header.html"></include> -->
-      <!-- <include src="./partials/hero.html"></include> -->
+    <main>
       <section id="aboutUs" class="section hero__section">
-        <div class="container container__products">
+        <div class="container container__aboutUs">
           <!-- <div class="container hero__container"></div> -->
-          <h2 class="products__main-header">ПРО БАНК</h2>
-          <ul class="products-block">
-            <li class="products-block__item">
-              <div class="products-card products-card--bg-pink">
-                <h3 class="products-card__header--text products-card__item">
+          <h2 class="aboutUs__main-header">ПРО БАНК</h2>
+          <ul class="aboutUs-block">
+            <li class="aboutUs-block__item">
+              <div class="aboutUs-card aboutUs-card--bg-blue">
+                <h3 class="aboutUs-card__header--text aboutUs-card__item">
                   Банк Львів – регіональний банк на Західній Україні для клієнтів ММСБ та фізичних
                   осіб
                 </h3>
                 <ul>
                   <li>
-                    <p class="products-card__description products-card__item">35.000 клієнтів</p>
+                    <p class="aboutUs-card__description aboutUs-card__item">35.000 клієнтів</p>
                   </li>
                   <li>
-                    <p class="products-card__description products-card__item">35 років на ринку</p>
+                    <p class="aboutUs-card__description aboutUs-card__item">35 років на ринку</p>
                   </li>
                   <li>
-                    <p class="products-card__description products-card__item">19 відділеннь</p>
+                    <p class="aboutUs-card__description aboutUs-card__item">19 відділеннь</p>
                   </li>
                   <li>
-                    <p class="products-card__description products-card__item">420 працівників</p>
+                    <p class="aboutUs-card__description aboutUs-card__item">420 працівників</p>
                   </li>
                 </ul>
               </div>
             </li>
-            <li class="products-block__item">
-              <div class="products-card products-card--bg-pink">
-                <h3 class="products-card__header--text products-card__item">Акціонери:</h3>
+            <li class="aboutUs-block__item">
+              <div class="aboutUs-card aboutUs-card--bg-blue">
+                <h3 class="aboutUs-card__header--text aboutUs-card__item">Акціонери:</h3>
                 <ul>
                   <li>
-                    <p class="products-card__description products-card__item">
+                    <p class="aboutUs-card__description aboutUs-card__item">
                       48.55% - responsAbility, Швейцарія
                     </p>
                   </li>
                   <li>
-                    <p class="products-card__description products-card__item">
+                    <p class="aboutUs-card__description aboutUs-card__item">
                       37.46% - M.Petursson, Ісландія
                     </p>
                   </li>
                   <li>
-                    <p class="products-card__description products-card__item">
+                    <p class="aboutUs-card__description aboutUs-card__item">
                       13.94% - Nefco, Фінляндія
                     </p>
                   </li>
@@ -173,19 +168,14 @@
           </ul>
         </div>
       </section>
-    </header>
-    <main>
-      <!-- <include src="./partials/products.html"></include> -->
       <section id="investors" class="section">
-        <div class="container container__products">
-          <h2 class="products__main-header">ІНВЕСТОРИ БАНКУ</h2>
-          <ul class="products-block">
-            <li class="products-block__item">
-              <div class="products-card products-card--bg-pink">
-                <h3 class="products-card__header--text products-card__item">
-                  ШВЕЙЦАРСЬКИЙ АКЦІОНЕР
-                </h3>
-                <p class="products-card__description products-card__item">
+        <div class="container container__aboutUs">
+          <h2 class="aboutUs__main-header">ІНВЕСТОРИ БАНКУ</h2>
+          <ul class="aboutUs-block">
+            <li class="aboutUs-block__item">
+              <div class="aboutUs-card aboutUs-card--bg-blue">
+                <h3 class="aboutUs-card__header--text aboutUs-card__item">ШВЕЙЦАРСЬКИЙ АКЦІОНЕР</h3>
+                <p class="aboutUs-card__description aboutUs-card__item">
                   Швейцарський інвестиційний фонд<span>responsAbility</span>здійснює фінансування
                   боргу та власного капіталу компаніям в країнах з перехідною економікою та країнах,
                   що розвиваються. Його акціонери включають ряд авторитетних установ на
@@ -193,22 +183,20 @@
                 </p>
               </div>
             </li>
-            <li class="products-block__item">
-              <div class="products-card products-card--bg-pink">
-                <h3 class="products-card__header--text products-card__item">
-                  ІСЛАНДСЬКИЙ АКЦІОНЕР
-                </h3>
-                <p class="products-card__description products-card__item">
+            <li class="aboutUs-block__item">
+              <div class="aboutUs-card aboutUs-card--bg-blue">
+                <h3 class="aboutUs-card__header--text aboutUs-card__item">ІСЛАНДСЬКИЙ АКЦІОНЕР</h3>
+                <p class="aboutUs-card__description aboutUs-card__item">
                   Ісландський інвестор Маргеір Петурсон у 2006 році викупив 99% акцій банку. Під
                   його керівництвом Банк впроваджує міжнародний досвід, який забезпечує стабільність
                   та надійність своїм клієнтам.
                 </p>
               </div>
             </li>
-            <li class="products-block__item">
-              <div class="products-card products-card--bg-pink">
-                <h3 class="products-card__header--text products-card__item">ФІНСЬКИЙ АКЦІОНЕР</h3>
-                <p class="products-card__description products-card__item">
+            <li class="aboutUs-block__item">
+              <div class="aboutUs-card aboutUs-card--bg-blue">
+                <h3 class="aboutUs-card__header--text aboutUs-card__item">ФІНСЬКИЙ АКЦІОНЕР</h3>
+                <p class="aboutUs-card__description aboutUs-card__item">
                   Північний зелений банк Nefco, є міжнародною фінансовою установою, яка фінансує
                   первинне розширення північноєвропейських зелених рішень на світових ринках.
                   Заснована у 1990 році п'ятьма північними країнами — Данії, Фінляндії, Ісландії,
@@ -220,60 +208,46 @@
         </div>
       </section>
 
-      <section id="management" class="section about__section">
-        <div class="container about__container">
-          <h2 class="title about__title">КЕРІВНИЦТВО БАНКУ</h2>
-          <div class="about__product">
-            <div class="about__thumb">
+      <section id="management" class="section management__section">
+        <div class="container management__container">
+          <h2 class="title management__title">КЕРІВНИЦТВО БАНКУ</h2>
+          <div class="management__product">
+            <div class="management__thumb">
               <img
                 src="https://www.banklviv.com/wp-content/uploads/2022/04/Bez-nazvy-2.jpg"
                 alt="management"
                 width="1200"
                 height="320"
               />
-              <div class="about_name_thumb">
+              <div class="management_name_thumb">
                 <div>
-                  <a class="link name_link" href=""><p class="about_name">Ашот Абраамян</p></a>
+                  <a class="link name_link" href=""><p class="management_name">Ашот Абраамян</p></a>
 
-                  <p class="about_name_country">Вірменія</p>
+                  <p class="management_name_country">Вірменія</p>
                 </div>
                 <div>
-                  <a class="link name_link" href=""><p class="about_name">Наталія Осадчій</p></a>
+                  <a class="link name_link" href=""
+                    ><p class="management_name">Наталія Осадчій</p></a
+                  >
 
-                  <p class="about_name_country">Молдова</p>
+                  <p class="management_name_country">Молдова</p>
                 </div>
                 <div>
-                  <a class="link name_link" href=""><p class="about_name">Віктор Хімяк</p></a>
+                  <a class="link name_link" href=""><p class="management_name">Віктор Хімяк</p></a>
 
-                  <p class="about_name_country">Україна</p>
+                  <p class="management_name_country">Україна</p>
                 </div>
                 <div>
-                  <a class="link name_link" href=""><p class="about_name">Тамар Тхелідзе</p></a>
+                  <a class="link name_link" href=""
+                    ><p class="management_name">Тамар Тхелідзе</p></a
+                  >
 
-                  <p class="about_name_country">Грузія</p>
+                  <p class="management_name_country">Грузія</p>
                 </div>
               </div>
-              <!-- <picture class="about__eco-bio">
-                <source
-                  srcset="./images/pc/about-eco-bio@1x.png 1x, ./images/pc/about-eco-bio@2x.png 2x"
-                  media="(min-width: 1280px)"
-                />
-                <source
-                  srcset="
-                    ./images/tab/about-produkt-bio-eco@1x-min.png 1x,
-                    ./images/tab/about-produkt-bio-eco@2x-min.png 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="./images/mobile/bioeco@1x.png 1x, ./images/mobile/bioeco@2x.png 2x"
-                  media="(min-width: 480px)"
-                />
-                <img src="./images/pc/about-eco-bio@1x.png" alt="cow and milk" />
-              </picture> -->
             </div>
-            <div class="about__description">
-              <p class="text about__text about__text--first">
+            <div class="management__description">
+              <p class="text management__text management__text--first">
                 Керівництво Банку має багатий міжнародний досвід в управлінні та розвитку великих
                 банків, орієнтованих на розвиток малого і середнього бізнесу. Вони застосовують
                 найкращі практики створення міцної, стабільної та вмотивованої команди
@@ -294,7 +268,6 @@
         </div>
       </section>
 
-      <!-- <include src="./partials/about.html"></include> -->
       <section id="development" class="section development__section">
         <div class="container development__container">
           <h2 class="development__title">НАШ РОЗВИТОК</h2>
@@ -336,9 +309,8 @@
           </div>
         </div>
       </section>
-      <!-- <include src="./partials/advantages.html"></include> -->
-      <!-- <include src="./partials/gallery.html"></include> -->
-      <section id="partners" class="gallery section">
+
+      <section id="partners" class="partners section">
         <div class="container partners__container">
           <h2 class="partners-box__title">ПОРТНЕРИ НАШОГО БАНКУ</h2>
           <ul class="partners-box__list partners-list list">
@@ -503,25 +475,13 @@
           </ul>
         </div>
       </section>
-
-      <!-- <include src="./partials/customer-reviews.html"></include> -->
-      <!-- <include src="./partials/contacts.html"></include> -->
-      <include src="./partials/modal.html"></include>
-      <include src="./partials/modal-frach.html"></include>
-      <include src="./partials/map-modal.html"></include>
     </main>
-    <footer>
-      <!-- <include src="./partials/footer.html"></include> -->
-    </footer>
+    <!-- <footer>
+      
+    </footer> -->
     <script src="./index.js"></script>
-    <script src="./js/map-modal.js"></script>
-    <script src="./js/modal-fr.js"></script>
-    <script src="./js/modal.js"></script>
-    <script src="./js/scroll.js"></script>
     <script src="./js/mobMenu.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
-    <script src="./js/gallery.js"></script>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -529,7 +489,6 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script src="./js/gallery-slider.js"></script>
     <script type="text/javascript">
       var scrollButton = document.querySelector('.scrollTop');
 
@@ -546,25 +505,5 @@
         });
       }
     </script>
-    <script>
-      window.myMap = function myMap() {
-        var mapProp1 = {
-          center: new google.maps.LatLng(41.894535, -87.618595),
-          zoom: 13,
-        };
-        var mapProp2 = {
-          center: new google.maps.LatLng(40.766065, -73.977993),
-          zoom: 13,
-        };
-        var mapProp3 = {
-          center: new google.maps.LatLng(33.763302, -118.163679),
-          zoom: 13,
-        };
-        var map1 = new google.maps.Map(document.getElementById('Chicago'), mapProp1);
-        var map2 = new google.maps.Map(document.getElementById('NewYork'), mapProp2);
-        var map2 = new google.maps.Map(document.getElementById('LosAngeles'), mapProp3);
-      };
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqa7PWe9IiGogT5fkM6JBnhH4WvWuKnmo&callback=myMap"></script>
   </body>
 </html>

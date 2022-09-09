@@ -1,5 +1,5 @@
 // ----------------MAIN---------------------- //
-.container__products {
+.container__aboutUs {
   padding-top: 30px;
   padding-bottom: 98px;
 
@@ -17,15 +17,32 @@
     padding-left: 113px;
   }
 }
+.hero__section {
+  background-color: $cl-section-hero;
+  overflow: hidden;
+
+  padding-top: 193px;
+  padding-bottom: 160px;
+
+  @include tab {
+    padding-top: 102px;
+    padding-bottom: 34px;
+  }
+
+  @include pc {
+    padding-top: 171px;
+    padding-bottom: 56px;
+  }
+}
 
 // -------------Header Part----------------- //
-.products__main-header {
+.aboutUs__main-header {
   font-family: Titan One;
   font-size: 34px;
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #ac145a;
+  color: $cl-menu-bg;
   margin-bottom: 60px;
 
   @include tab {
@@ -36,23 +53,10 @@
     font-size: 58px;
     margin-bottom: 80px;
   }
-  &-description {
-    margin-bottom: 15px;
-    font-family: Titan One;
-    font-size: 18px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: $cl-primary;
-
-    @include pc {
-      font-size: 30px;
-    }
-  }
 }
 
-// ------------------ Product Cards ------------------ //
-.products-block {
+// ------------------ About us Cards ------------------ //
+.aboutUs-block {
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -66,7 +70,7 @@
     margin-bottom: 0;
   }
 }
-.products-card {
+.aboutUs-card {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -103,31 +107,10 @@
     width: 330px;
     height: 525px;
   }
-
-  // -----------------Dote------------- //
-  //   &::after {
-  //     display: flex;
-  //     position: absolute;
-  //     content: '';
-  //     top: 220px;
-  //     left: 45%;
-  //     background-image: url(./../images/dotes@2x-min.png);
-  //     width: 26px;
-  //     height: 6px;
-
-  //     @include tab {
-  //       top: 205px;
-  //     }
-  //     @include pc {
-  //       top: 230px;
-  //     }
-  //     //  -------------------------------- //
-  //   }
-  // }
 }
 // ------------ Decorative Pictures --------------- //
-.products-card--bg {
-  &-pink {
+.aboutUs-card--bg {
+  &-blue {
     background-color: #003e51;
 
     // &::before {
@@ -211,8 +194,8 @@
 }
 // ---------------------------------------------------------------- //
 
-//  -------------------- Inside Product Cards --------------------- //
-.products-card__header--text {
+//  -------------------- Inside About us Cards --------------------- //
+.aboutUs-card__header--text {
   display: block;
 
   margin-bottom: 66px;
@@ -230,7 +213,7 @@
   }
 }
 
-.products-card__description {
+.aboutUs-card__description {
   margin-bottom: 30px;
 
   font-weight: bold;
@@ -245,26 +228,3 @@
     margin-bottom: 16px;
   }
 }
-.products-card__btn {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-
-  border-radius: 50%;
-  outline: none;
-
-  transition: border 250ms linear;
-
-  &:hover,
-  &:focus,
-  &:active {
-    cursor: pointer;
-    border: 2px solid #c7133e;
-  }
-
-  &--icon {
-    width: 40px;
-    height: 40px;
-  }
-}
-// ---------------------------------------------------------------- //

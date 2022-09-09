@@ -1,67 +1,67 @@
-.hero__section {
-  background-color: #dee2e6;
-  overflow: hidden;
+// .hero__section {
+//   background-color: #dee2e6;
+//   overflow: hidden;
 
-  padding-top: 193px;
-  padding-bottom: 160px;
+//   padding-top: 193px;
+//   padding-bottom: 160px;
 
-  @include tab {
-    padding-top: 102px;
-    padding-bottom: 34px;
-  }
+//   @include tab {
+//     padding-top: 102px;
+//     padding-bottom: 34px;
+//   }
 
-  @include pc {
-    padding-top: 171px;
-    padding-bottom: 56px;
-  }
-}
+//   @include pc {
+//     padding-top: 171px;
+//     padding-bottom: 56px;
+//   }
+// }
 
-.hero__container {
-  // background-image: url(../../images/bank.jpg);
-  position: relative;
-  z-index: 0;
+// .hero__container {
+//   // background-image: url(../../images/bank.jpg);
+//   position: relative;
+//   z-index: 0;
 
-  @include tab {
-    display: flex;
-    justify-content: space-between;
+//   @include tab {
+//     display: flex;
+//     justify-content: space-between;
 
-    padding-left: 34px;
-    padding-right: 34px;
-  }
+//     padding-left: 34px;
+//     padding-right: 34px;
+//   }
 
-  @include pc {
-    padding-left: 115px;
-    padding-right: 115px;
-  }
-}
+//   @include pc {
+//     padding-left: 115px;
+//     padding-right: 115px;
+//   }
+// }
 
-.page-title {
-  text-align: center;
-  margin-bottom: 36px;
+// .page-title {
+//   text-align: center;
+//   margin-bottom: 36px;
 
-  // width: 218px;
+//   // width: 218px;
 
-  font-family: 'Titan One', cursive;
-  font-size: 26px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $cl-white-primary;
-}
+//   font-family: 'Titan One', cursive;
+//   font-size: 26px;
+//   line-height: 1.15;
+//   letter-spacing: 0.04em;
+//   text-transform: uppercase;
+//   color: $cl-white-primary;
+// }
 
-.hero_text-left {
-  margin-bottom: 24px;
-  font-size: 18px;
-}
+// .hero_text-left {
+//   margin-bottom: 24px;
+//   font-size: 18px;
+// }
 
-.hero_text-right {
-  margin-bottom: 36px;
-  font-size: 18px;
-}
+// .hero_text-right {
+//   margin-bottom: 36px;
+//   font-size: 18px;
+// }
 
-.hero__nav-item {
-  margin-bottom: 8px;
-}
+// .hero__nav-item {
+//   margin-bottom: 8px;
+// }
 
 // ------------------------------------ HERO LEFT PART ----------------------------------
 
