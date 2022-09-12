@@ -1,0 +1,230 @@
+// ----------------MAIN---------------------- //
+.container__aboutUs {
+  padding-top: 30px;
+  padding-bottom: 98px;
+
+  text-align: center;
+
+  @include tab {
+    padding-top: 35px;
+    padding-bottom: 112px;
+  }
+
+  @include pc {
+    padding-top: 40px;
+    padding-bottom: 120px;
+    padding-right: 113px;
+    padding-left: 113px;
+  }
+}
+.hero__section {
+  background-color: $cl-section-hero;
+  overflow: hidden;
+
+  padding-top: 193px;
+  padding-bottom: 160px;
+
+  @include tab {
+    padding-top: 102px;
+    padding-bottom: 34px;
+  }
+
+  @include pc {
+    padding-top: 171px;
+    padding-bottom: 56px;
+  }
+}
+
+// -------------Header Part----------------- //
+.aboutUs__main-header {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $cl-menu-bg;
+  margin-bottom: 60px;
+
+  @include tab {
+    margin-bottom: 60px;
+  }
+
+  @include pc {
+    font-size: 58px;
+    margin-bottom: 80px;
+  }
+}
+
+// ------------------ About us Cards ------------------ //
+.aboutUs-block {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: -130px;
+
+  @include tab {
+    flex-direction: row;
+    margin-right: -20px;
+    margin-bottom: 0;
+  }
+}
+.aboutUs-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 485px;
+  width: 280px;
+
+  margin-bottom: 130px;
+  padding-top: 41px;
+  padding-bottom: 41px;
+  padding-right: 42px;
+  padding-left: 42px;
+  text-align: center;
+  color: $cl-white-primary;
+
+  border-radius: 24px;
+
+  @include tab {
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    margin-right: 20px;
+    margin-bottom: 0;
+
+    width: 360px;
+    height: 485px;
+  }
+  @include pc {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 44px;
+    padding-right: 44px;
+
+    width: 330px;
+    height: 525px;
+  }
+}
+// ------------ Decorative Pictures --------------- //
+.aboutUs-card--bg {
+  &-blue {
+    background-color: #003e51;
+
+    // &::before {
+    //   position: absolute;
+    //   content: '';
+    //   width: 250px;
+    //   height: 250px;
+    //   top: -113px;
+    //   left: 7%;
+    //   // background-image: url(./../images/mobile/ice-cream@2x.png);
+    //   background-repeat: no-repeat;
+    //   background-size: contain;
+
+    //   @include tab {
+    //     width: 220px;
+    //     height: 238px;
+    //     left: 0%;
+    //   }
+
+    //   @include pc {
+    //     width: 335px;
+    //     height: 335px;
+    //     top: -210px;
+    //   }
+    // }
+  }
+  // &-bezh {
+  //   background-color: $cl-card2;
+
+  //   &::before {
+  //     position: absolute;
+  //     content: '';
+  //     width: 250px;
+  //     height: 250px;
+  //     top: -113px;
+  //     left: 7%;
+  //     background-image: url(./../images/mobile/ice-coffe@2x.png);
+  //     background-repeat: no-repeat;
+  //     background-size: contain;
+
+  //     @include tab {
+  //       width: 220px;
+  //       height: 238px;
+  //       left: 0%;
+  //     }
+
+  //     @include pc {
+  //       width: 335px;
+  //       height: 335px;
+  //       top: -210px;
+  //     }
+  //   }
+  // }
+
+  // &-green {
+  //   background-color: $cl-card3;
+
+  //   &::before {
+  //     position: absolute;
+  //     content: '';
+  //     width: 250px;
+  //     height: 250px;
+  //     top: -113px;
+  //     left: 7%;
+  //     background-image: url(./../images/mobile/milkshakes@2x.png);
+  //     background-repeat: no-repeat;
+  //     background-size: contain;
+
+  //     @include tab {
+  //       width: 220px;
+  //       height: 238px;
+  //       left: 0%;
+  //     }
+  //     @include pc {
+  //       width: 335px;
+  //       height: 335px;
+  //       top: -210px;
+  //     }
+  //   }
+  // }
+}
+// ---------------------------------------------------------------- //
+
+//  -------------------- Inside About us Cards --------------------- //
+.aboutUs-card__header--text {
+  display: block;
+
+  margin-bottom: 66px;
+
+  font-family: Titan One;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  @include pc {
+    font-size: 30px;
+    margin-bottom: 64px;
+  }
+}
+
+.aboutUs-card__description {
+  margin-bottom: 30px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+
+  @include tab {
+    margin-bottom: 40px;
+  }
+  @include pc {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+}
