@@ -43,10 +43,30 @@
     }
   }
 }
+.development-list__wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
 
-.development__list {
+.development-list {
   display: flex;
   justify-content: space-between;
+}
+
+.development-item__thumb1 {
+  grid-area: 4 / 1 / 5 / 2;
+}
+.development-item__thumb2 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.development-item__thumb3 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.development-item__thumb4 {
+  grid-area: 1 / 4 / 2 / 5;
 }
 
 .development-img__thumb {
