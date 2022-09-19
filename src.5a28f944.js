@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/top.png":[["top.40d70c01.png","FR3c"],"FR3c"],"/home/runner/work/banklviv1/banklviv1/src/images/management.jpg":[["management.70f800a7.jpg","aGT2"],"aGT2"],"/home/runner/work/banklviv1/banklviv1/src/images/lion1.jpg":[["lion1.c4fdb24e.jpg","LRCk"],"LRCk"],"/home/runner/work/banklviv1/banklviv1/src/images/lion2.jpg":[["lion2.ef4d81d3.jpg","onPz"],"onPz"],"/home/runner/work/banklviv1/banklviv1/src/images/lion3.jpg":[["lion3.9d804c29.jpg","ILqL"],"ILqL"],"/home/runner/work/banklviv1/banklviv1/src/images/sajt-holovna-dekstop-3.jpg":[["sajt-holovna-dekstop-3.d84c0891.jpg","uiNB"],"uiNB"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/baklviv1/src.289a3149.js.map
+//# sourceMappingURL=/baklviv1/src.5a28f944.js.map
